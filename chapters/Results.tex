@@ -13,10 +13,104 @@ Present the results from following the procedures in \nameref{chapter:Method}, n
     \label{tab:abc}
     \end{table}
 
+\section{Simulations with 'cheap FSI'}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{results/4-HV_1p5_T6_15}
+        \caption{\textcolor{tab:red}{\underline{4-HV}}\_1p5\_T6\_15}
+        \label{fig:4-HV_1p5_T6_15}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{results/4-45_1p5_T6_15}
+        \caption{\textcolor{tab:red}{\underline{4-45}}\_1p5\_T6\_15}
+        \label{fig:4-45_1p5_T6_15}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{results/1-HV_1p5_T6_15}
+        \caption{\textcolor{tab:red}{\underline{1-HV}}\_1p5\_T6\_15}
+        \label{fig:1-HV_1p5_T6_15}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{results/1-22p5_1p5_T6_15}
+        \caption{\textcolor{tab:red}{\underline{1-22p5}}\_1p5\_T6\_15}
+        \label{fig:1-22p5_1p5_T6_15}
+    \end{subfigure}
+    \caption{Effect of the slits.}
+    \label{fig:effect_slit}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{results/1-HV_3p0_T6_15}
+        \caption{1-HV\_\textcolor{tab:red}{\underline{3p0}}\_T6\_15}
+        \label{fig:1-HV_3p0_T6_15}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{results/1-HV_1p5_T6_15_mesh}
+        \caption{\text{1-HV\_\textcolor{tab:red}{\underline{1p5}}\_T6\_15}}
+        \label{fig:1-HV_1p5_T6_15_mesh}
+    \end{subfigure}
+    \caption{Effect of different element sizes.}
+    \label{fig:effect_element}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{results/1-22p5_1p5_T4_15}
+        \caption{\text{1-22p5\_1p5\_\textcolor{tab:red}{\underline{T4}}\_15}}
+        \label{fig:T4}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{results/1-22p5_1p5_T6_15}
+        \caption{\text{1-22p5\_1p5\_\textcolor{tab:red}{\underline{T6}}\_15}}
+        \label{fig:T6}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{results/1-22p5_1p5_T7_15}
+        \caption{\text{1-22p5\_1p5\_\textcolor{tab:red}{\underline{T7}}\_15}}
+        \label{fig:T7}
+    \end{subfigure}
+    \caption{Effect of the materials.}
+    \label{fig:effect_material}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{results/1-HV_1p5_T6_10}
+        \caption{1-HV\_1p5\_T6\_\textcolor{tab:red}{\underline{10}}}
+        \label{fig:1-HV_1p5_T6_10}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{results/1-HV_1p5_T6_15}
+        \caption{1-HV\_1p5\_T6\_\textcolor{tab:red}{\underline{15}}}
+        \label{fig:1-HV_1p5_T6_15_amp}
+    \end{subfigure}
+    \caption{Effect of different pressure amplitudes.}
+    \label{fig:effect_amp}
+\end{figure}
+
+\section{ANN study with 'cheap FSI'}
+
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{results/para1_net}
-    \caption{Final training losses for different network architectures defined by activation function, number of hidden layers and number of neurons per hidden layer}
+    \caption{Final training losses for different network architectures defined by activation function, number of hidden layers and number of neurons per hidden layer.}
     \label{fig:para1_net}
 \end{figure}
 
@@ -95,34 +189,4 @@ Present the results from following the procedures in \nameref{chapter:Method}, n
     \includegraphics[width=\textwidth]{results/para3_vs_para5}
     \caption{Bottom text}
     \label{fig:para3_vs_para5}
-\end{figure}
-
-\begin{figure}
-    \centering
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{results/4-HV_1p5_T6_15}
-        \caption{test}
-        \label{fig:y equals x}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{results/4-45_1p5_T6_15}
-        \caption{test}
-        \label{fig:three sin x}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{results/1-HV_1p5_T6_15}
-        \caption{test}
-        \label{fig:five over x}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{results/1-22p5_1p5_T6_15}
-        \caption{test}
-        \label{fig:blah}
-    \end{subfigure}
-       \caption{Effect of slits}
-       \label{fig:effect_slit}
 \end{figure}
